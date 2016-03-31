@@ -1,0 +1,18 @@
+#portfolio-conainer {
+  margin-top: 100px;
+
+  .portfolio-conainer__inner {
+    text-align: center;
+  }
+
+  .portfolio-conainer__projectRow {
+    .column {
+      box-shadow: none;
+
+      img {
+        display: block;
+      	margin: 0 auto !important;
+      }
+    }
+  }
+}

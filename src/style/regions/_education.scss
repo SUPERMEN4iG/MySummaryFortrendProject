@@ -1,0 +1,16 @@
+#education-container {
+  margin-top: 80px;
+
+  .education-container-rightItems {
+
+    .education-container-rightItem {
+      @include custom-item-box();
+    }
+
+    p { margin-bottom: 50px; }
+  }
+
+  .row {
+    border-bottom: 1px solid rgba(34,36,38,.15);
+  }
+}

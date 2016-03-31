@@ -1,0 +1,65 @@
+@import "../modules/varibles";
+
+#about-me {
+  margin-bottom: 100px;
+}
+
+#about-me-container
+{
+  .about-me-container__photo {
+    min-height: 750px;
+    background: url("../images/landing_photo_01.png") 25% no-repeat;
+  }
+
+  .about-me-container__text {
+    background-color: #f2f2f1;
+    min-height: 750px;
+
+    .about-me-container-text__top {
+      margin-top: 100px;
+
+      h1 {
+        font-family: Roboto-Bold;
+        color: $header1;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-family: Roboto-Regular;
+        color: $paragraph1;
+        font-size: 17px;
+      }
+    }
+
+    .about-me-container-text__bottom {
+      margin-top: 30px;
+
+      .about-me-container-text__sketch {
+        margin-top: 10px;
+
+        h3 {
+          color: $header1;
+          text-transform: uppercase;
+          font-family: Roboto-Bold;
+        }
+        p { color: $paragraph1; font-size: 17px;}
+
+        i.web-design-icon {
+          @include sketch-icon("../images/web-design-icon.png");
+        }
+
+        i.online-marketing-icon {
+          @include sketch-icon("../images/online-marketing-icon.png");
+        }
+
+        i.graphic-design-icon {
+          @include sketch-icon("../images/graphic-design-icon.png");
+        }
+
+        i.seo-icon {
+          @include sketch-icon("../images/seo-icon.png");
+        }
+      }
+    }
+  }
+}

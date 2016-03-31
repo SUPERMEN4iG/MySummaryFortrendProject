@@ -1,0 +1,40 @@
+@mixin sketch-icon($image)
+{
+  &:before {
+    width: 41px;
+    height: 41px;
+    display: inline-block;
+    content: "\0000a0";
+    background: url($image) no-repeat;
+  }
+}
+
+@mixin custom-item-box() {
+
+  &__subheader {
+    display: block;
+    font-family: Roboto-Medium;
+    font-size: 16px;
+    color: $paragraph1;
+  }
+
+  &__rating {
+    display: inline-block;
+    margin: 16px 0 0 0;
+    padding: 6px;
+    background-color: $green_01;
+    color: white;
+    font-family: Roboto-Bold;
+  }
+}
+
+@mixin social-icon-footer($name, $url) {
+  &.#{$name} {
+    background: #4b5456 url($url) no-repeat;
+
+    &:hover {
+      background: #4b5456 url($url) no-repeat -34px;
+      opacity: 0.7;
+     }
+  }
+}

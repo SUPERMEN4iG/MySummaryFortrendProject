@@ -1,0 +1,36 @@
+body {
+  background: #ff;
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format('truetype');
+}
+
+.ui p {
+  font-family: Roboto-Regular;
+  color: $paragraph1;
+  font-size: 17px;
+}
+
+.ui h1, h2, h3 {
+  font-family: Roboto-Bold;
+  color: $header1;
+  text-transform: uppercase;
+}
+
+.ui.huge.button {
+  text-transform: uppercase;
+  font-family: Roboto-Bold;
+  font-size: large;
+}

@@ -1,0 +1,37 @@
+#footer-container {
+  background-color: $footer-background;
+
+  .footer-container__inner {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    h4 {
+      font-family: Roboto-Medium;
+      font-size: 14px;
+      color: $paragraph1;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+
+    .footer-container-iconsList {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .social-icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 50px;
+      transition: opacity 1s ease-in-out;
+      margin-right: 10px;
+
+      @include social-icon-footer("twitter", "../images/social-icon-twitter.png");
+      @include social-icon-footer("facebook", "../images/social-icon-facebook.png");
+      @include social-icon-footer("pinterest", "../images/social-icon-pinterest.png");
+      @include social-icon-footer("googleplus", "../images/social-icon-googleplus.png");
+      @include social-icon-footer("dribbble", "../images/social-icon-dribbble.png");
+      @include social-icon-footer("linkedin", "../images/social-icon-linkedin.png");
+    }
+  }
+}

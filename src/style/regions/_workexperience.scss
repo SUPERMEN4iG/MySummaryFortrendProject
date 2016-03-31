@@ -1,0 +1,12 @@
+#workexperience-container {
+  margin-top: 100px;
+
+  .workexperience-container-rightItems {
+
+    p { margin-bottom: 50px; }
+
+    .workexperience-container-rightItem {
+      @include custom-item-box();
+    }
+  }
+}

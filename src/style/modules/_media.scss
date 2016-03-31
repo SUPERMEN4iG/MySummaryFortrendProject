@@ -1,0 +1,64 @@
+@media only screen and (max-width: 767px)
+{
+  #header.landing-page {
+    background: black url("../images/landing_logo.png") 65% no-repeat !important;
+  }
+
+  #header-menu {
+    &.main-header-menu {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .main-header-menu__item.main-header-menu-logo
+    {
+      margin-top: 15px;     
+    }
+
+    .main-header-menu__item.right {
+      margin-left: 0 !important;
+    }
+
+    .main-header-menu__item.main-header-menu-logo {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  #about-me-container {
+    .about-me-container__text .about-me-container-text__top {
+      margin-top: 0px;
+    }
+  }
+
+  #resume-container {
+    min-height: 300px;
+  }
+
+  #education-container {
+    margin-top: 0px;
+  }
+
+  #workexperience-container {
+    margin-top: 0px;
+  }
+
+  #portfolio-conainer {
+    margin-top: 0px;
+
+    .portfolio-conainer__inner {
+      border: 0 !important;
+    }
+  }
+
+  #quotations-container {
+    min-height: 320px;
+
+    .quotations-container__inner {
+      margin-top: 0;
+    }
+  }
+}

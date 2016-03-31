@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web &amp; Graphic Designer</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css">
+	<link rel="stylesheet" href="build/css/style.min.css" media="screen" title="no title">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/semantic/dist/semantic.min.js"></script>
+
+	<script type="text/javascript">
+	//TODO: Вывести в отдельный файл, либо переделать
+		$(document).ready(function() {
+			$("#slideshow > div:gt(0)").hide();
+
+			setInterval(function() {
+				$('#slideshow > div:first')
+					.fadeOut(1000)
+					.next()
+					.fadeIn(1000)
+					.end()
+					.appendTo('#slideshow');
+				},  3000);
+
+				var $page = $('html, body');
+				$('a[href*="#"]').click(function() {
+				    $page.animate({
+				        scrollTop: $($.attr(this, 'href')).offset().top
+				    }, 400);
+				    return false;
+					});
+
+					$(".contact-me-sendbutton").on("click", function () {
+						$('.ui.page.dimmer').dimmer('show');
+					});
+		});
+	</script>
+
+</head>
+<body>
+	<div id="header" class="ui one column grid landing-page">
+		<div class="ui landing-page_inner">
+			<div class="ui container landing-page_inner__wrapper">
+				<div class="ui column text">
+					<h1 class="ui header inverted">Web &amp; Graphic Designer</h1>
+					<button class="ui huge inverted button">Learn more</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="ui one column grid">
+	<div id="header-menu" style="width:100%;" class="ui inverted menu main-header-menu">
+			<div class="item left main-header-menu__item main-header-menu-logo">
+				<div class="main-header-menu-logo__left">
+					<span style="padding-top: 6px;padding-left: 12px;position: absolute;font-size: 2rem;">F</span>
+				</div>
+				<div class="main-header-menu-logo__right"><span class="white">Fo</span><span class="green">cal</span></div>
+			</div>
+      <a href="#header" class="item right main-header-menu__item">Home</a>
+      <a href="#about-me-container" class="item main-header-menu__item">About</a>
+      <a href="#skills-container" class="item main-header-menu__item">Skills</a>
+			<a href="#resume-container" class="item main-header-menu__item">Resume</a>
+			<a href="#workexperience-container" class="item main-header-menu__item">Testimonials</a>
+			<a href="#portfolio-conainer" class="item main-header-menu__item">Portfolio</a>
+			<a href="#contactMe-container" class="item main-header-menu__item">Contact Me</a>
+    </div>
+</div>
+
+<div id="about-me" class="ui stackable three column very relaxed grid container about-me">
+    <div class="column">
+      <div class="about-me_top-areas">
+				<h1 class="about-me_top-areas__header">Values</h1>
+				<p class="about-me_top-areas__text">Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+      </div>
+    </div>
+
+		<div class="column">
+      <div class="about-me_top-areas">
+				<h1 class="about-me_top-areas__header">Goals</h1>
+				<p class="about-me_top-areas__text">Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+      </div>
+    </div>
+
+		<div class="column">
+      <div class="about-me_top-areas">
+				<h1 class="about-me_top-areas__header">Hobies</h1>
+				<p class="about-me_top-areas__text">Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+      </div>
+    </div>
+  </div>
+
+	<div id="about-me-container" class="ui stackable grid">
+	  <div class="five wide computer three wide column about-me-container__photo">
+	  </div>
+		<div class="eleven wide column row about-me-container__text">
+			<div class="four wide two wide large screen one wide widescreen column"></div>
+	    <div class="ten wide column">
+				<div class="ui about-me-container-text__top">
+					<h1>About me</h1>
+					<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.</p>
+					<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei.</p>
+				</div>
+
+				<div class="ui stackable grid about-me-container-text__bottom">
+					<div class="eight wide column">
+						<div class="ui grid about-me-container-text__sketch">
+							<div class="three wide column">
+								<i class="web-design-icon"></i>
+							</div>
+							<div class="thirteen wide column">
+								<h3>Web design</h3>
+								<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+							</div>
+						</div>
+						<div class="ui grid about-me-container-text__sketch">
+							<div class="three wide column">
+								<i class="online-marketing-icon"></i>
+							</div>
+							<div class="thirteen wide column">
+								<h3>Online marketing</h3>
+								<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+							</div>
+						</div>
+					</div>
+					<div class="eight wide column">
+						<div class="ui grid about-me-container-text__sketch">
+							<div class="three wide column">
+								<i class="graphic-design-icon"></i>
+							</div>
+							<div class="thirteen wide column">
+								<h3>Graphic design</h3>
+								<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+							</div>
+						</div>
+						<div class="ui grid about-me-container-text__sketch">
+							<div class="three wide column">
+								<i class="seo-icon"></i>
+							</div>
+							<div class="thirteen wide column">
+								<h3>Seo</h3>
+								<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+	    </div>
+	  </div>
+</div>
+
+<div id="skills-container" class="ui stackable grid">
+	<div class="wide computer two wide column">
+	</div>
+	<div class="eleven wide column row skills-container__inner">
+		<div class="seven wide column">
+			<h1>My skills</h1>
+			<p>
+				Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.
+			</p>
+			<button class="ui huge inverted green button">Contact me</button>
+		</div>
+		<div class="one wide column"></div>
+		<div class="seven wide column">
+			<h3>Photoshop</h3>
+			<div class="ui active progress success" data-percent="90">
+        <div class="bar" style="transition-duration: 300ms; width: 90%;">
+          <div class="progress">90%</div>
+        </div>
+      </div>
+
+			<h3>Illustrator</h3>
+			<div class="ui active progress success" data-percent="80">
+        <div class="bar" style="transition-duration: 300ms; width: 80%;">
+          <div class="progress">80%</div>
+        </div>
+      </div>
+
+			<h3>HTML / CSS</h3>
+			<div class="ui active progress success" data-percent="90">
+        <div class="bar" style="transition-duration: 300ms; width: 90%;">
+          <div class="progress">90%</div>
+        </div>
+      </div>
+
+			<h3>PHP / MYSQL</h3>
+			<div class="ui active progress success" data-percent="70">
+        <div class="bar" style="transition-duration: 300ms; width: 70%;">
+          <div class="progress">70%</div>
+        </div>
+      </div>
+		</div>
+	</div>
+</div>
+
+<div id="resume-container" class="ui stackable centered grid">
+	<div class="eleven wide column resume-container__inner">
+		<h1>Resume</h1>
+		<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
+		<button class="ui huge inverted green button">Download resume</button>
+	</div>
+</div>
+<div class="arrow-down"></div>
+
+<div id="education-container" class="ui stackable grid">
+	<div class="wide computer three wide column">
+	</div>
+	<div class="wide computer eleven wide column">
+		<h1>My Education</h1>
+	</div>
+	<div class="wide computer three wide column">
+	</div>
+	<div class="eleven wide column row">
+		<div class="seven wide column">
+			<p>
+				Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.
+			</p>
+		</div>
+		<div class="one wide column"></div>
+		<div class="seven wide column">
+			<div class="ui divided items education-container-rightItems">
+			  <div class="item education-container-rightItem">
+				    <div class="middle aligned content">
+							<h3>Graphic desing diploma</h3>
+				      <span class="education-container-rightItem__subheader"><b>Reeves College</b> / June 2008 - May 2010</span>
+							<span class="education-container-rightItem__rating">4.0 GPA</span>
+				    </div>
+			  </div>
+				<!-- this block [p] must be in education-container-rightItem -->
+				<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+
+				<div class="item education-container-rightItem">
+				    <div class="middle aligned content">
+							<h3>Cit diploma</h3>
+				      <span class="education-container-rightItem__subheader"><b>Lethbridge College</b> / June 2006 - May 2008</span>
+							<span class="education-container-rightItem__rating">4.0 GPA</span>
+				    </div>
+			  </div>
+				<!-- this block [p] must be in education-container-rightItem -->
+				<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="workexperience-container" class="ui stackable grid">
+	<div class="wide computer three wide column">
+	</div>
+	<div class="wide computer eleven wide column">
+		<h1>Work experience</h1>
+	</div>
+	<div class="wide computer three wide column">
+	</div>
+	<div class="eleven wide column row">
+		<div class="seven wide column">
+			<p>
+				Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.
+			</p>
+		</div>
+		<div class="one wide column"></div>
+		<div class="seven wide column">
+			<div class="ui divided items workexperience-container-rightItems">
+			  <div class="item workexperience-container-rightItem">
+				    <div class="middle aligned content">
+							<h3>Lead web designes</h3>
+				      <span class="workexperience-container-rightItem__subheader"><b>ABC Company, Saskatoon</b>  /  June 2011 - Present</span>
+							<span class="workexperience-container-rightItem__rating">3 Years</span>
+				    </div>
+			  </div>
+				<!-- this block [p] must be in workexperience-container-rightItem -->
+				<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+
+				<div class="item workexperience-container-rightItem">
+				    <div class="middle aligned content">
+							<h3>Junior designer</h3>
+				      <span class="workexperience-container-rightItem__subheader"><b>XYZ Company, Lethbridge</b>  /  June 2008 - May 2009</span>
+							<span class="workexperience-container-rightItem__rating">1 Years</span>
+				    </div>
+			  </div>
+				<!-- this block [p] must be in workexperience-container-rightItem -->
+				<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+
+				<div class="item workexperience-container-rightItem">
+				    <div class="middle aligned content">
+							<h3>Web developer</h3>
+				      <span class="workexperience-container-rightItem__subheader"><b>The Company, Lethbridge</b>  /  June 2007 - May 2008</span>
+							<span class="workexperience-container-rightItem__rating">1 Years</span>
+				    </div>
+			  </div>
+				<!-- this block [p] must be in workexperience-container-rightItem -->
+				<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="quotations-container" class="ui stackable centered grid">
+	<div class="nine wide column quotations-container__inner">
+		<div id="slideshow">
+			<div>
+				<p>“Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.”</p>
+				<h3>John stone</h3>
+			</div>
+
+			<div>
+				<p>“Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat.”</p>
+				<h3>Steve jobs</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="portfolio-conainer" class="ui stackable three column divided container centered grid">
+	<div class="fourteen wide column portfolio-conainer__inner">
+		<h2>Portfolio</h2>
+		<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
+	</div>
+
+	<div class="row portfolio-conainer__projectRow">
+    <div class="column">
+      <img src="build/images/portfolio_row1_1.png" alt="" />
+    </div>
+    <div class="column">
+      <img src="build/images/portfolio_row1_2.png" alt="" />
+    </div>
+		<div class="column">
+      <img src="build/images/portfolio_row1_3.png" alt="" />
+    </div>
+  </div>
+	<div class="row portfolio-conainer__projectRow">
+    <div class="column">
+      <img src="build/images/portfolio_row2_1.png" alt="" />
+    </div>
+    <div class="column">
+      <img src="build/images/portfolio_row2_2.png" alt="" />
+    </div>
+		<div class="column">
+      <img src="build/images/portfolio_row2_3.png" alt="" />
+    </div>
+  </div>
+	<div class="row portfolio-conainer__projectRow">
+    <div class="column">
+      <img src="build/images/portfolio_row3_1.png" alt="" />
+    </div>
+    <div class="column">
+      <img src="build/images/portfolio_row3_2.png" alt="" />
+    </div>
+		<div class="column">
+      <img src="build/images/portfolio_row3_3.png" alt="" />
+    </div>
+  </div>
+</div>
+
+<div id="contactMe-container" class="ui stackable grid">
+	<div class="wide computer three wide column">
+	</div>
+	<div class="wide computer eleven wide column">
+		<h1>Contact me</h1>
+	</div>
+	<div class="wide computer three wide column">
+	</div>
+	<div class="eleven wide column row">
+		<div class="seven wide column contactMe-container-leftColumn">
+			<p>
+				Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.
+			</p>
+			<p>
+				122 33rd Street East <br>
+				Saskatoon, SK <br>
+				S7K 1R9
+			</p>
+			<table class="email-phone-table">
+				<tr>
+					<td>
+						Email:
+					</td>
+					<td>
+						info@focal.com
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Phone:
+					</td>
+					<td>
+						1-306-222-2323
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="one wide column"></div>
+		<div class="seven wide column contactMe-container-rightColumn">
+			<form class="ui form">
+			  <div class="required field">
+			    <label>Name</label>
+			    <input name="Name" type="text">
+			  </div>
+				<div class="required field">
+			    <label>Email Address</label>
+			    <input name="Name" type="text">
+			  </div>
+				<div class="required field">
+			    <label>Text</label>
+			    <textarea></textarea>
+			  </div>
+			  <div class="ui submit button contact-me-sendbutton">Contact me</div>
+			  <div class="ui error message"></div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="footer-container" class="ui stackable centered grid">
+	<div class="eleven wide column footer-container__inner">
+		<h4>Copyright 2014 Focal - Built With Passion</h4>
+		<div class="ui stackable centered grid footer-container-iconsList">
+			<a class="social-icon twitter" href="#"></a>
+			<a class="social-icon facebook" href="#"></a>
+			<a class="social-icon pinterest" href="#"></a>
+			<a class="social-icon googleplus" href="#"></a>
+			<a class="social-icon dribbble" href="#"></a>
+			<a class="social-icon linkedin" href="#"></a>
+		</div>
+	</div>
+</div>
+
+<div class="ui page dimmer">
+    <div class="content">
+      <div class="center">
+        <h2 class="ui inverted icon header">
+          <i class="heart icon"></i>
+          Thanks for submit!
+        </h2>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
